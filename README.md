@@ -38,8 +38,8 @@ ViralMet-Pipeline performs the following steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ViralMet-Pipeline.git
-   cd ViralMet-Pipeline
+   git clone https://github.com/sittiton/ViralMet.git
+   cd ViralMet
    ```
 
 2. Create and activate the Conda environment:
