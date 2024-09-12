@@ -102,4 +102,4 @@ We welcome contributions to ViralMet-Pipeline!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the PANDASIA project License. Other purposes using is prohibited.
