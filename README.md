@@ -38,8 +38,8 @@ ViralMet-Pipeline performs the following steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ViralMet-Pipeline.git
-   cd ViralMet-Pipeline
+   git clone https://github.com/sittiton/ViralMet.git
+   cd ViralMet
    ```
 
 2. Create and activate the Conda environment:
@@ -102,4 +102,4 @@ We welcome contributions to ViralMet-Pipeline!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the PANDASIA project License. Other purposes using is prohibited.
