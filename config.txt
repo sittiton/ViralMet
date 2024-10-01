@@ -1,0 +1,21 @@
+# ViralMet-Pipeline Configuration
+
+# Input/Output
+INPUT_DIR="raw_data"
+OUTPUT_DIR="analysis_results"
+R1_FILE="sample_R1.fastq"
+R2_FILE="sample_R2.fastq"
+
+# Resources
+THREADS=4
+MEMORY=16
+
+# Reference Files
+ADAPTER_FILE="/path/to/TruSeq3-PE-2.fa"
+REF_HOST="/path/to/reference_host.fasta"
+REF_VIRUS_NUCL="/path/to/ref_virus_nucl.fasta"
+REF_VIRUS_PROT="/path/to/ref_virus_prot.fasta"
+KRAKEN_DB="/path/to/kraken2_db"
+
+# Pipeline Options
+CLEAN_INTERMEDIATE=false
