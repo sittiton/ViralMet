@@ -34,38 +34,65 @@ ViralMet-Pipeline performs the following steps:
 - At least 16GB RAM (32GB or more recommended)
 - At least 100GB free disk space
 
+
+# ViralMet Pipeline Usage Guide
+
+## Prerequisites
+- Conda installed on your system
+- Git (for cloning the repository)
+
 ## Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/sittiton/ViralMet.git
-   cd ViralMet
-   ```
+```bash
+git clone https://github.com/sittiton/ViralMet.git
+cd ViralMet
+```
 
-2. Create and activate the Conda environment:
-   ```
-   conda env create -f environment.yml
-   conda activate viralmet
-   ```
+2. Run the installation script:
+```bash
+bash install.sh
+```
 
-3. Download and set up necessary databases:
-   ```
-   bash setup_databases.sh
-   ```
-
-## Usage
+## Running the Pipeline
 
 1. Activate the Conda environment:
-   ```
-   conda activate viralmet
-   ```
+```bash
+conda activate viralmet
+```
 
-2. Run the pipeline:
-   ```
-   bash viralmet-pipeline.sh
-   ```
+2. Create a configuration file named `config.ini` in the same directory as the pipeline script:
+```ini
+# Input/Output
+INPUT_DIR="raw_data"
+OUTPUT_DIR="analysis_results"
+R1_FILE="sample_R1.fastq"
+R2_FILE="sample_R2.fastq"
 
-   You can modify the parameters in the script or pass them as command-line arguments.
+# Resources
+THREADS=4
+MEMORY=16
+
+# Reference Files
+REF_HOST="/path/to/host_reference.fasta"
+REF_VIRUS_NUCL="/path/to/virus_nucleotide.fasta"
+REF_VIRUS_PROT="/path/to/virus_protein.fasta"
+ADAPTER_FILE="/path/to/adapters.fa"
+KRAKEN_DB="/path/to/kraken_db"
+
+# Pipeline Options
+CLEAN_INTERMEDIATE=false
+```
+
+3. Run the pipeline:
+```bash
+bash viralmet-pipeline_1.0.1.sh
+```
+
+## Troubleshooting
+
+If you encounter issues with Bowtie2, the pipeline will automatically handle environment switching. No manual intervention is required.
+
 
 ## Output
 
@@ -85,14 +112,6 @@ output_directory/
 ├── kraken_results/
 └── prokka_results/
 ```
-
-## Troubleshooting
-
-If you encounter any issues, please check the following:
-
-1. Ensure all required software is installed and in your PATH.
-2. Check that you have sufficient disk space and memory.
-3. Verify that your input files are in the correct format and location.
 
 For more detailed error messages, check the log files in the output directory.
 
