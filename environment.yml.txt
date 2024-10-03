@@ -1,0 +1,22 @@
+name: viralmet
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - fastqc=0.11.9
+  - trimmomatic=0.39
+  - bowtie2=2.4.5
+  - spades=3.15.5
+  - blast=2.12.0
+  - diamond=2.0.15
+  - samtools=1.15
+  - mafft=7.505
+  - iqtree=2.2.0
+  - kraken2=2.1.2
+  - prokka=1.14.6
+  - khmer=3.0.0
+  - pip
+  - pip:
+    - biopython==1.79
