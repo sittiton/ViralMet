@@ -86,7 +86,10 @@ CLEAN_INTERMEDIATE=false
 
 3. Run the pipeline:
 ```bash
-bash viralmet-pipeline_1.0.1.sh
+chmod +x viralmet-pipeline_1.1.0.sh bowtie2_wrapper.sh
+```
+```bash
+bash viralmet-pipeline_1.1.0.sh
 ```
 
 ## Troubleshooting
